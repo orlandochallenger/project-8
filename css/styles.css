@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2,
+p {
+  padding-top: 0.6rem;
+}
+
+p {
+  color: gray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.avatar {
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+
+.text-container {
+  padding: 2rem 2rem 2rem 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.left-arrow,
+.right-arrow {
+  cursor: pointer;
+}
